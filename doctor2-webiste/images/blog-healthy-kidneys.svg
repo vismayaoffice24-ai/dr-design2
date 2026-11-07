@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgHealthy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#061A2B" />
+      <stop offset="50%" stop-color="#0B2447" />
+      <stop offset="100%" stop-color="#143B5A" />
+    </linearGradient>
+    <linearGradient id="tealGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BFECE7" />
+      <stop offset="50%" stop-color="#5FC9C0" />
+      <stop offset="100%" stop-color="#1F9E96" />
+    </linearGradient>
+    <radialGradient id="glowHealthy" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5FC9C0" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#0B2447" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgHealthy)" />
+  <circle cx="600" cy="315" r="260" fill="url(#glowHealthy)" />
+
+  <!-- Shield of Protection & Healthy Kidney Life -->
+  <g transform="translate(600, 315)">
+    <!-- Decorative Outer Ring -->
+    <circle cx="0" cy="0" r="200" fill="none" stroke="url(#tealGrad2)" stroke-width="2" stroke-dasharray="12 8" opacity="0.6" />
+    
+    <!-- Shield Outline -->
+    <path d="M0 -150 L110 -100 C110 50 40 140 0 170 C-40 140 -110 50 -110 -100 Z" 
+          fill="none" stroke="url(#tealGrad2)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Pure Water Droplet in Center of Shield -->
+    <path d="M0 -80 C30 -20 50 10 50 40 C50 75 25 100 0 100 C-25 100 -50 75 -50 40 C-50 10 -30 -20 0 -80 Z" 
+          fill="url(#tealGrad2)" opacity="0.25" stroke="url(#tealGrad2)" stroke-width="3.5" stroke-linejoin="round" />
+
+    <!-- Healthy Heart Vital Symbol -->
+    <path d="M-50 20 L-25 20 L-15 0 L-5 45 L5 -10 L15 20 L50 20" 
+          fill="none" stroke="#BFECE7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+
+    <!-- Radiating Vitality Dots -->
+    <circle cx="-160" cy="-60" r="6" fill="#5FC9C0" opacity="0.8" />
+    <circle cx="160" cy="-60" r="6" fill="#5FC9C0" opacity="0.8" />
+    <circle cx="-140" cy="110" r="5" fill="#5FC9C0" opacity="0.6" />
+    <circle cx="140" cy="110" r="5" fill="#5FC9C0" opacity="0.6" />
+  </g>
+
+  <rect x="24" y="24" width="1152" height="582" rx="18" fill="none" stroke="url(#tealGrad2)" stroke-width="1.5" opacity="0.3" />
+</svg>

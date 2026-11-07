@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgEarly" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#071930" />
+      <stop offset="50%" stop-color="#0B2447" />
+      <stop offset="100%" stop-color="#10335C" />
+    </linearGradient>
+    <linearGradient id="tealGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BFECE7" />
+      <stop offset="50%" stop-color="#5FC9C0" />
+      <stop offset="100%" stop-color="#1F9E96" />
+    </linearGradient>
+    <radialGradient id="glowEarly" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5FC9C0" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0B2447" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glowFilt" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgEarly)" />
+  <circle cx="600" cy="315" r="260" fill="url(#glowEarly)" />
+
+  <!-- Subtle Blueprint Circles -->
+  <g opacity="0.12" stroke="#5FC9C0" stroke-width="1.5">
+    <circle cx="600" cy="315" r="280" fill="none" />
+    <circle cx="600" cy="315" r="190" fill="none" />
+    <circle cx="600" cy="315" r="110" fill="none" />
+    <line x1="220" y1="315" x2="980" y2="315" stroke-dasharray="6 6" />
+  </g>
+
+  <!-- Central Kidney Diagram with Early Detection Waves -->
+  <g transform="translate(600, 315)">
+    <!-- Orbiting Accent -->
+    <path d="M-220 0 A 220 220 0 0 1 220 0" fill="none" stroke="url(#tealGrad)" stroke-width="2.5" stroke-dasharray="10 8" opacity="0.75" />
+    <path d="M-180 0 A 180 180 0 0 0 180 0" fill="none" stroke="url(#tealGrad)" stroke-width="2" stroke-dasharray="6 6" opacity="0.5" />
+
+    <!-- Stylized Kidneys in Teal -->
+    <g filter="url(#glowFilt)">
+      <!-- Left Kidney Silhouette -->
+      <path d="M-40 -90 C-95 -90 -130 -40 -130 20 C-130 80 -80 120 -25 120 C-10 120 5 105 10 90 C15 70 -5 50 -15 30 C-30 0 -15 -35 -5 -60 C2 -75 -15 -90 -40 -90 Z" 
+            fill="none" stroke="url(#tealGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <!-- Left Inner Loop -->
+      <path d="M-60 -50 C-90 -30 -90 30 -55 45 C-35 55 -25 30 -45 10 C-65 -10 -40 -35 -60 -50 Z" 
+            fill="none" stroke="#BFECE7" stroke-width="2.5" opacity="0.8" />
+      <!-- Right Kidney Silhouette -->
+      <path d="M40 -90 C95 -90 130 -40 130 20 C130 80 80 120 25 120 C10 120 -5 105 -10 90 C-15 70 5 50 15 30 C30 0 15 -35 5 -60 C-2 -75 15 -90 40 -90 Z" 
+            fill="none" stroke="url(#tealGrad)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M60 -50 C90 -30 90 30 55 45 C35 55 25 30 45 10 C65 -10 40 -35 60 -50 Z" 
+            fill="none" stroke="#BFECE7" stroke-width="2.5" opacity="0.8" />
+    </g>
+
+    <!-- Early Diagnostic Pulse Alert (Microvascular Wave) -->
+    <path d="M-360 40 L-260 40 L-240 40 L-225 10 L-210 70 L-190 -20 L-175 40 L-150 40" 
+          fill="none" stroke="url(#tealGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+    <path d="M150 40 L175 40 L190 -20 L210 70 L225 10 L240 40 L260 40 L360 40" 
+          fill="none" stroke="url(#tealGrad)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.9" />
+
+    <circle cx="-190" cy="-20" r="5" fill="#BFECE7" />
+    <circle cx="190" cy="-20" r="5" fill="#BFECE7" />
+  </g>
+
+  <rect x="24" y="24" width="1152" height="582" rx="18" fill="none" stroke="url(#tealGrad)" stroke-width="1.5" opacity="0.3" />
+</svg>
