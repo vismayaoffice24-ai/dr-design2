@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bgDial" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#051426" />
+      <stop offset="50%" stop-color="#0B2447" />
+      <stop offset="100%" stop-color="#12375F" />
+    </linearGradient>
+    <linearGradient id="tealGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#BFECE7" />
+      <stop offset="50%" stop-color="#5FC9C0" />
+      <stop offset="100%" stop-color="#1F9E96" />
+    </linearGradient>
+    <radialGradient id="glowDial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#5FC9C0" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#0B2447" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgDial)" />
+  <circle cx="600" cy="315" r="260" fill="url(#glowDial)" />
+
+  <!-- Dual Fluid Circulation & Dialyzer Filtration Membrane -->
+  <g transform="translate(600, 315)">
+    <!-- Dialyzer Column Frame -->
+    <rect x="-55" y="-140" width="110" height="280" rx="20" fill="none" stroke="url(#tealGrad5)" stroke-width="4.5" />
+    
+    <!-- Microfiber Hollow Filter Lines -->
+    <g stroke="#BFECE7" stroke-width="1.8" opacity="0.6">
+      <line x1="-35" y1="-100" x2="-35" y2="100" />
+      <line x1="-20" y1="-100" x2="-20" y2="100" />
+      <line x1="-5" y1="-100" x2="-5" y2="100" />
+      <line x1="10" y1="-100" x2="10" y2="100" />
+      <line x1="25" y1="-100" x2="25" y2="100" />
+      <line x1="40" y1="-100" x2="40" y2="100" />
+    </g>
+
+    <!-- Circulation Arcs (Hemodialysis Flow Loop) -->
+    <path d="M-55 -60 C-150 -60 -180 60 -180 120" fill="none" stroke="url(#tealGrad5)" stroke-width="3.5" stroke-dasharray="10 6" />
+    <path d="M55 60 C150 60 180 -60 180 -120" fill="none" stroke="url(#tealGrad5)" stroke-width="3.5" stroke-dasharray="10 6" />
+
+    <!-- Pure Water Flow Entry Nodes -->
+    <circle cx="-180" cy="120" r="10" fill="#0B2447" stroke="url(#tealGrad5)" stroke-width="3" />
+    <circle cx="180" cy="-120" r="10" fill="#0B2447" stroke="url(#tealGrad5)" stroke-width="3" />
+
+    <!-- Central Cleansing Glow -->
+    <circle cx="0" cy="0" r="28" fill="#5FC9C0" opacity="0.3" />
+    <path d="M-15 0 L-5 12 L15 -10" fill="none" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+
+  <rect x="24" y="24" width="1152" height="582" rx="18" fill="none" stroke="url(#tealGrad5)" stroke-width="1.5" opacity="0.3" />
+</svg>
